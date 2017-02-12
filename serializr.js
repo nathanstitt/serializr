@@ -402,7 +402,7 @@
                     propDef = _defaultPrimitiveProp
                 if (propDef === false)
                     return
-                var jsonValue = propDef.serializer(obj[key])
+                var jsonValue = propDef.serializer(obj[key], key, obj)
                 if (jsonValue === undefined){
                     return
                 }
